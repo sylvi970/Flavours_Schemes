@@ -8,7 +8,7 @@ void main() {
     flavor: Flavor.prod,
     values: FlavorValues(
       apiBaseUrl: "",
-      gamePlayBaseUrl: '',
+      gamePlayBaseUrl: 'jhjhj',
     ),
   );
   startApp();
