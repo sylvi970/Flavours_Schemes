@@ -19,23 +19,23 @@ class MyApp extends StatelessWidget {
         body: Builder(
           builder: (context) => Center(
             child:
-                // FlavorConfig.isDEV()
-                //     ? ElevatedButton(
-                //         onPressed: () {
-                //           ScaffoldMessenger.of(context).showSnackBar(
-                //             const SnackBar(content: Text("Development!")),
-                //           );
-                //         },
-                //         child: const Text("Dev"),
-                //       )
-                //     :
+                FlavorConfig.isDEV()
+                    ? ElevatedButton(
+                        onPressed: () {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(content: Text("Development!")),
+                          );
+                        },
+                        child: const Text("Dev"),
+                      )
+                    :
                 ElevatedButton(
               onPressed: () {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text("Production!")),
+                  const SnackBar(content: Text("Flavors & Schemes!")),
                 );
               },
-              child: const Text("Prod"),
+              child: const Text("Hello "),
             ),
           ),
         ),
